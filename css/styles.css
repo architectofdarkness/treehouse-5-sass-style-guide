@@ -61,7 +61,7 @@
     opacity: initial; }
 
 .theme__colors, .theme__colors--default, .theme__colors--success, .theme__colors--error, .theme__colors--warning, .theme__colors--info {
-  text-align: center;
+  margin: 0 auto;
   padding: 10px 30px;
   border: 0;
   color: #fff;
@@ -373,6 +373,9 @@ blockquote {
     padding-right: 10px; }
     [class*="grid__col--"] + [class*="grid__col--"] {
       margin-left: 2%; } }
+[class*="grid__col--"].theme__colors {
+  display: inline;
+  text-align: center; }
 
 .theme__colors.grid__col--3 {
   background-color: #CD89E7; }

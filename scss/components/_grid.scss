@@ -46,6 +46,10 @@
     padding-left: 10px;
     padding-right: 10px;
   }
+  &.theme__colors {
+    display: inline;
+    text-align: center;
+  }
 }
 
 
@@ -59,7 +63,6 @@
   @include m-bg-colors($ui-colors) {
     @extend %grid-system;
   }
-  
 }
 
 // Add theme__poly class for colors to be added to grid__col classes
