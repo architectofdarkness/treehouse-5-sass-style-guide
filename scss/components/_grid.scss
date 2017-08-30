@@ -43,6 +43,7 @@
   @include mq(medium) {
     @include doubly(percentage($g-gutter-width / $context));    
     @include flex-dir-align(row);
+    justify-content: space-around;
     padding-left: 10px;
     padding-right: 10px;
   }

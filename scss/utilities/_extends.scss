@@ -11,6 +11,7 @@
 %nav { 
   @include mq(small) {
     @include flex-dir-align(column, center);
+    margin: 50px 0; 
   }
   
   @include mq(medium) {

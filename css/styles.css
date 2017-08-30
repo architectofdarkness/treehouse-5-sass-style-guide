@@ -2,7 +2,8 @@
   .nav {
     display: flex;
     flex-direction: column;
-    align-items: center; } }
+    align-items: center;
+    margin: 50px 0; } }
 @media (min-width: 769px) {
   .nav {
     display: flex;
@@ -366,6 +367,7 @@ ul {
   [class*="grid__col--"] {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     padding-left: 10px;
     padding-right: 10px; }
     [class*="grid__col--"] + [class*="grid__col--"] {
