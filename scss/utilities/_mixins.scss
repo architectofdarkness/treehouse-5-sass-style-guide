@@ -31,9 +31,9 @@
 }
 
 @mixin theme-colors($theme-map) {
-  @each $i, $color in $theme-map {
+  @for $i from 1 through $g-col-count {
     &.grid__col--#{$i} {
-      background-color: $color;
+      background-color: map-get($theme-map, $i);
     }
   }
 }
