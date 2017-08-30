@@ -62,7 +62,7 @@
   letter-spacing: $letter-space;
   font-weight: $font-weight--light;
   font-size: em(24px);
-  font-family: $font-family--secondary;
+  font-family: $font-family--primary;
   margin: 0 0 em(10px);
 }
 
@@ -101,6 +101,11 @@
 
 %row {
   margin: 20px 0;
+}
+
+%center-text {
+  display: inline;
+  text-align: center;
 }
 
 // ==========================================================================

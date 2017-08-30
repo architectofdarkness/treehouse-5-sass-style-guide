@@ -11,12 +11,13 @@
   }
 }
 
-blockquote {
+.blockquote {
     margin: em(10px, 24px) 0;
     padding: 10px 10px 10px 15px;
     border-left: em(10px, 24px) solid palette($color-primary);
     font-size: em(18px);
-	font-weight: $font-weight--bold;
+	color: palette($grey, x-dark);
+    font-weight: $font-weight--bold;
 	font-style : italic;
 	font-size : em(18px);
 }

@@ -1,4 +1,3 @@
-@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 @media (min-width: 1px) and (max-width: 768px) {
   .nav {
     display: flex;
@@ -73,6 +72,10 @@
 
 .grid__row {
   margin: 20px 0; }
+
+[class*="grid__col--"][class*="theme__colors"], .theme__colors {
+  display: inline;
+  text-align: center; }
 
 .img--logo, .img--avatar, .img--frame {
   max-width: 100%; }
@@ -287,16 +290,13 @@ th {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-body {
-  color: #646464;
-  font-size: 16px;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.5; }
-
 p {
+  color: #525559;
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
   margin: 0 0 1.6666666667em;
   font-weight: 300;
-  font-size: 1.125em;
   line-height: 1.5; }
 
 ul {
@@ -304,11 +304,12 @@ ul {
   padding: 0;
   list-style-type: none; }
 
-blockquote {
+.blockquote {
   margin: 0.4166666667em 0;
   padding: 10px 10px 10px 15px;
   border-left: 0.4166666667em solid #58E2C2;
   font-size: 1.125em;
+  color: #525559;
   font-weight: 700;
   font-style: italic;
   font-size: 1.125em; }
@@ -373,9 +374,6 @@ blockquote {
     padding-right: 10px; }
     [class*="grid__col--"] + [class*="grid__col--"] {
       margin-left: 2%; } }
-[class*="grid__col--"].theme__colors {
-  display: inline;
-  text-align: center; }
 
 .theme__colors.grid__col--3 {
   background-color: #CD89E7; }
