@@ -1,0 +1,34 @@
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+  color: palette($black, x-light);
+  font-size: $base__font-size;
+  font-family: $font-family--primary;
+  line-height: ($base__line/$base__font-size);
+}
+
+// Text
+
+
+p {
+	margin: 0 0 em(30px, 18px);
+	font-weight: $font-weight--light;
+	font-size: em(18px);
+	line-height: (27px/18px);
+}
+
+// Lists
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+

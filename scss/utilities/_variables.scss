@@ -1,0 +1,99 @@
+// ==========================================================================
+// Fonts
+// ==========================================================================
+
+// Font Stacks
+
+$font-url--google        : 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
+$font-family--primary    : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--secondary  : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Font Sizes
+
+$base__font-size : 16px;
+$base__line      : 24px;
+$letter-space    : 1px;
+
+// Font Weights
+
+$font-weight--thin       : 100;
+$font-weight--light      : 300;
+$font-weight--medium     : 400;
+$font-weight--bold       : 700;
+$font-weight--ultra-bold : 900;
+
+
+
+// ==========================================================================
+// Base Colors - Descriptive
+// ==========================================================================
+
+$white : #fff;
+$black : #0b0b0b;
+$grey  : #797e83;
+
+$fountain-blue  : #51DEFD;
+$emerald        : #7AC490;
+$sunglo         : #e67478;
+$coral          : #ff784f;
+$purple-majesty : #9279c3;
+$scooter        : #39add1;
+
+// Column Background Colours
+
+$grid-colors: (
+  3   : #CD89E7,
+  4   : #DFB380,
+  5   : #9FE89A,
+  6   : #8490D9,
+  7   : #D78570,
+  8   : #7ABFAB,
+  12  : #81CE7D
+);
+
+// ==========================================================================
+// Body Colors - Functional
+// ==========================================================================
+
+// Primary Colors
+
+$color-primary   : #58E2C2;
+$color-secondary : #51DEFD;
+$color-accent    : $emerald;
+$color-shadow    : rgba($black, .2);
+
+// User Interface Colors
+
+$ui-colors: (
+	default : $fountain-blue,
+	success : $emerald,
+	error   : $sunglo,
+	warning : $coral,
+	info    : $purple-majesty,
+);
+
+
+
+// ==========================================================================
+// Borders
+// ==========================================================================
+
+$br--default    : .4em;
+$br--round      : 50%;
+
+
+// ==========================================================================
+// Layout
+// ==========================================================================
+
+// Grid
+
+$g-col-width    : 65px;
+$g-gutter-width : 20px;
+$g-col-count    : 12;
+$g-cont-max-w   : 1050px;
+
+// Breakpoints
+
+$brkpoint-sm    : 1px;
+$brkpoint-md    : 768px;

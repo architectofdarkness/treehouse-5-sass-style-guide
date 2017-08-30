@@ -1,0 +1,69 @@
+// Centered
+
+.centered {
+  text-align: center;
+  margin: auto;
+}
+
+
+// Grid 
+
+.container {
+  max-width: 90%;
+  margin: 0 auto 100px;
+  
+  @include mq(medium) {
+    width: 80%;
+  }
+}
+
+// Row Layout
+.grid__row {
+  @extend %row;
+  @include mq(medium) {
+    @include flex-dir-align(row, stretch);
+  }
+}
+
+// Generate Grid Columns
+.grid__col {  
+  @include mq(medium) {
+    @include g-columns;
+  }
+}
+
+// Column Layout
+
+[class*="grid__col--"] {
+  
+  @include mq(small)  {
+    margin-top: em(12px);
+    margin-bottom: em(12px);
+  }
+  @include mq(medium) {
+    @include doubly(percentage($g-gutter-width / $context));    
+    @include flex-dir-align(row);
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+
+
+// Colors
+
+.theme__colors {
+  @extend %grid-system;
+  @include theme-colors($grid-colors);
+  
+  @include m-bg-colors($ui-colors) {
+    @extend %grid-system;
+  }
+  
+}
+
+// Add theme__poly class for colors to be added to grid__col classes
+
+.theme__poly {
+  @include theme-colors($grid-colors);
+}

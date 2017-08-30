@@ -1,0 +1,110 @@
+// ==========================================================================
+// BEM Convention
+// ==========================================================================
+
+// BEM selectors
+
+@mixin e($element) {
+	&__#{$element} {
+    @content;
+  }
+}
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+// ==========================================================================
+// Colors
+// ==========================================================================
+
+// Generate modifier color classes
+
+@mixin m-bg-colors($map) {
+	@each $theme, $color in $map {
+		&--#{$theme} {
+			background-color: $color;
+            @content;
+		}
+	}
+}
+
+@mixin theme-colors($theme-map) {
+  @each $i, $color in $theme-map {
+    &.grid__col--#{$i} {
+      background-color: $color;
+    }
+  }
+}
+
+
+// ==========================================================================
+// Container Sizing
+// ==========================================================================
+
+// Grid Columns
+     
+@mixin g-columns {
+  @for $i from 1 through $g-col-count {
+    $context: ($g-col-width * $g-col-count) + ($g-gutter-width * ($g-col-count - 1)) !global;  
+    
+    $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
+    
+    // Generate column modifier classes
+    &--#{$i} {
+      width: percentage($target / $context);
+    }
+  }
+}
+
+// Pseudo-elements
+
+@mixin p-el($el, $el-w: null, $el-h: null) {
+    &:#{$el} {
+      display: block;
+      content: '';
+      position: absolute;
+      width: $el-w;
+      height: $el-h;
+      @content;
+  }
+}
+
+// ==========================================================================
+// Layout
+// ==========================================================================
+
+// Flexbox
+
+@mixin flex-dir-align($direction: 'row', $align: null) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+}
+
+// Adjacent sibling margins
+
+@mixin doubly($margin: 1em) {
+  & + & {
+    margin-left: $margin;
+    @content;
+  }
+}
+
+// ==========================================================================
+// Media Queries
+// ==========================================================================
+
+@mixin mq($break) {
+  @if $break == "small" {
+    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+      @content;
+    }
+  }
+  @else if $break == "medium" {
+    @media (min-width: $brkpoint-md + 1) {
+      @content;
+    }
+  }
+}
