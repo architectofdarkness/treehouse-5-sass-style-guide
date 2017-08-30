@@ -47,7 +47,6 @@
     padding-right: 10px;
   }
   &[class*="theme__colors"] {
-    @extend %center-text;
   }
 }
 
@@ -56,7 +55,6 @@
 // Colors
 
 .theme__colors {
-  @extend %center-text;
   @extend %grid-system;
   @include theme-colors($grid-colors);
   

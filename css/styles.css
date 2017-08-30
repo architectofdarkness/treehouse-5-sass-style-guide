@@ -73,10 +73,6 @@
 .grid__row {
   margin: 20px 0; }
 
-[class*="grid__col--"][class*="theme__colors"], .theme__colors {
-  display: inline;
-  text-align: center; }
-
 .img--logo, .img--avatar, .img--frame {
   max-width: 100%; }
 
