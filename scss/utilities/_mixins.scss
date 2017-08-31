@@ -42,8 +42,8 @@
 // For exceeds I created this Each directive
 
 @mixin poly-colors($theme-map) {
-  @each $color in $theme-map {
-    &.grid__col--#{$color} {
+  @each $col, $color in $theme-map {
+    &.grid__col--#{$col} {
       background-color: $color;
     }
   }
