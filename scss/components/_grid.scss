@@ -64,8 +64,8 @@
   }
 }
 
-// Add theme__poly class for colors to be added to grid__col classes
+// For exceeds here is the poly mixin being called :))
 
 .theme__poly {
-  @include theme-colors($grid-colors);
+  @include poly-colors($grid-colors);
 }

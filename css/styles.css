@@ -26,7 +26,7 @@
 
 .nav__item a:hover, .nav__item--current a {
   font-weight: 400;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.68px;
   color: #fff;
   border-radius: 5px;
   background-color: #58E2C2;
@@ -309,7 +309,8 @@ ul {
   color: #525559;
   font-weight: 700;
   font-style: italic;
-  font-size: 1.125em; }
+  font-size: 1.125em;
+  max-width: 500px; }
 
 .link {
   color: #51DEFD;
@@ -398,20 +399,20 @@ ul {
 .theme__colors--info {
   background-color: #9279c3; }
 
-.theme__poly.grid__col--3 {
-  background-color: #CD89E7; }
-.theme__poly.grid__col--4 {
-  background-color: #DFB380; }
-.theme__poly.grid__col--5 {
-  background-color: #9FE89A; }
-.theme__poly.grid__col--6 {
-  background-color: #8490D9; }
-.theme__poly.grid__col--7 {
-  background-color: #D78570; }
-.theme__poly.grid__col--8 {
-  background-color: #7ABFAB; }
-.theme__poly.grid__col--12 {
-  background-color: #81CE7D; }
+.theme__poly.grid__col--3 #CD89E7 {
+  background-color: 3 #CD89E7; }
+.theme__poly.grid__col--4 #DFB380 {
+  background-color: 4 #DFB380; }
+.theme__poly.grid__col--5 #9FE89A {
+  background-color: 5 #9FE89A; }
+.theme__poly.grid__col--6 #8490D9 {
+  background-color: 6 #8490D9; }
+.theme__poly.grid__col--7 #D78570 {
+  background-color: 7 #D78570; }
+.theme__poly.grid__col--8 #7ABFAB {
+  background-color: 8 #7ABFAB; }
+.theme__poly.grid__col--12 #81CE7D {
+  background-color: 12 #81CE7D; }
 
 .img--logo {
   margin: auto; }
